@@ -1,0 +1,20 @@
+Master Thesis
+Investigating Different Concurrency Mechanisms in Java
+Petter Andersen Busterud
+University of Oslo, August 2012
+
+The following code for this repository is the Java-files used for the test results in this thesis:
+
+
+Sorting Tests:
+
+- Quicksort (QuicksortTesting.java): Sequential, Threaded, ExecutorService and Fork/Join implementations tested with Test Data Structure seen in Section 3.1.
+- LSD-Radixsort (LSDRadixsortTesting.java): Sequential and three Parallel implementations using CyclicBarrier and Atomicity, tested with Test Data Structure seen in Section 3.1.
+- Graph Creation (GraphCreationSort.java): Create graph from the data produced by QuicksortTesting.java and LSDRadixsortTesting.java.
+
+Overhead Tests:
+- Overhead (OverheadTesting.java): Methods, Classes, Threads, ExecutorService and Fork/Join overhead testing.
+- OverheadAtomic (OverheadAtomicTesting.java): int, int[], AtomicInteger, AtomicIntegerArray overhead testing.
+- Batch-file for Overhead (OverheadTesting.bat): Test the Overhead and/or OverheadAtomic many times in a Windows environment.
+- Bash-file for Overhead (OverheadTesting.sh): Test the Overhead and/or OverheadAtomic many times in a Linux environment.
+- Graph Creation (GraphCreationOverhead.java): Create graph from the data produced by OverheadTesting.java and OverheadAtomicTesting.java.
